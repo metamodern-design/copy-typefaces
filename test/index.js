@@ -26,7 +26,7 @@ test.after.always(async () => {
 });
 */
 
-test('All files were copied', (t) => {
+test('All files were copied', async (t) => {
   const results = await Promise.all(
     expected.map(
       (name) => fs.pathExists(path.resolve(context, dist, 'files', name)),

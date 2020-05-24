@@ -20,11 +20,11 @@ test.before(async (t) => {
   await copyTypefaces(context, { dist });
 });
 
-/*
+
 test.after.always(async () => {
   await del(path.resolve(context, dist));
 });
-*/
+
 
 test('All files were copied', async (t) => {
   const results = await Promise.all(

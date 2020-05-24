@@ -1,1 +1,1 @@
-# copy-typefaces
+# @metamodern/copy-typefaces

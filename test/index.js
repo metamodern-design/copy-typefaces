@@ -2,7 +2,7 @@ import path from 'path';
 import test from 'ava';
 import fs from 'fs-extra';
 import del from 'del';
-import copyTypefaces from '../dist/esm.js';
+import copyTypefaces from '../lib/index.js';
 
 
 const context = path.resolve(process.cwd(), 'test/fixtures');

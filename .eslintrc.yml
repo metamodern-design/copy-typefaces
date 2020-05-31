@@ -14,11 +14,9 @@ plugins:
   - import
 
 rules:
-  no-console: off
-  no-underscore-dangle: off
   import/no-extraneous-dependencies:
     - error
-    - devDependencies: true
+    - devDependencies: test/*.js
   import/extensions:
     - error
     - always

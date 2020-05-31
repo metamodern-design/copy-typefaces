@@ -4,7 +4,7 @@
 
 ## Install
 
-```bash
+```sh
 npm i @metamodern/copy-typefaces
 
 ```
@@ -13,7 +13,7 @@ npm i @metamodern/copy-typefaces
 
 This package is released as an ES module only. Minimum Node.js version is 12 (latest LTS as of release date). CommonJS `require()` is not supported.
 
-```javascript
+```js
 import copyTypefaces from '@metamodern/copy-typefaces';
 
 const onRender = async () => {
@@ -24,15 +24,18 @@ const onRender = async () => {
 
 ## API
 
-> copyTypefaces(context, { dist })
+```ts
+copyTypefaces(context: string, { dist = 'dist' } = {})
 
-### Required
+```
+
+#### Required
 
 - __context__: path to the project's root directory containing the relevant *package.json* and *node_modules* (will be resolved as described [here](https://nodejs.org/api/fs.html#fs_file_paths))
 
-### Options
+#### Options
 
-- __dist__: name of (or path to) the public directory where the files will be copied (will be resolved relative to *context*)
+- __dist__: name of (or path) to the public directory where the files will be copied (will be resolved relative to *context*)
 
 ## Notes
 

@@ -24,8 +24,10 @@ const onRender = async () => {
 
 ## API
 
+The module's default export is an async function with the following parameters:
+
 ```ts
-copyTypefaces(context: string, { dist = 'dist' } = {})
+async function(context: string, { dist = 'dist' } = {}): Promise<void>
 
 ```
 

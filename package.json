@@ -1,6 +1,6 @@
 {
   "name": "@metamodern/copy-typefaces",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Automates copying font files from typeface-* packages in your dependencies",
   "author": "Daniel C. Narey <os@metamodern.design>",
   "license": "ISC",

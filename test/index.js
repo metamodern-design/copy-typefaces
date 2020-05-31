@@ -16,7 +16,7 @@ const expected = [
 ];
 
 
-test.before(async (t) => {
+test.before(async () => {
   await copyTypefaces(context, { dist });
 });
 
@@ -32,7 +32,7 @@ test('All files were copied', async (t) => {
       (name) => fs.pathExists(path.resolve(context, dist, 'files', name)),
     ),
   );
- 
+
   t.true(
     results.every((x) => x),
   );
